@@ -1,0 +1,13 @@
+{
+  "name": "grow",
+  "repo": "zhm/grow",
+  "description": "Auto-growing textareas",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}

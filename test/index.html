@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Grow</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+    .text, .grow-700 {
+      padding: 2px;
+      margin: 0;
+      width: 230px;
+      font-family: 'Lucida Grande';
+      font-size: 11px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 0px;
+      text-transform: none;
+      word-spacing: 0px;
+      text-indent: 0px;
+      line-height: normal;
+    }
+    </style>
+  </head>
+  <body>
+    <textarea class="text"></textarea>
+    <script src="../build/build.js"></script>
+    <script src="./jquery.js"></script>
+    <script>
+      var Grow = require('grow');
+      var g = Grow('.text', 'grow-700');
+    </script>
+  </body>
+</html>
