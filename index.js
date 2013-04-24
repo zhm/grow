@@ -3,8 +3,7 @@ module.exports = Grow;
 
 function Grow(selector, className) {
   if (!(this instanceof Grow)) return new Grow(selector, className);
-  this.className = className;
-  this.selector = selector || 'grow';
+  this.className = className || 'grow';
   this.element = typeof(selector) === 'string' ? document.querySelector(selector) : selector;
   this.setup();
   this.adjust();
@@ -12,7 +11,6 @@ function Grow(selector, className) {
 
 Grow.prototype.setup = function() {
   this.createMirror();
-  this.adjustMirror();
   this.element.style.overflow  = 'hidden';
   this.element.style.overflowY = 'hidden';
   this.element.style.wordWrap  = 'break-word';
@@ -85,6 +83,7 @@ Grow.prototype.createMirror = function() {
   ta.style.overflow        = 'hidden';
   ta.style.overflowY       = 'hidden';
   ta.className             = this.className + ' ' + this.className + '-mirror';
+  ta.style.width           = typeof($) !== 'undefined' ? $(this.element).width() + 'px' : this.element.offsetWidth + 'px';
 
   document.body.appendChild(ta);
 };
