@@ -62,7 +62,7 @@ Grow.prototype.adjust = function() {
 Grow.prototype.createMirror = function() {
   var ta, mirror;
 
-  mirror = document.querySelector(this.className + '-mirror');
+  mirror = document.querySelector('.' + this.className + '-mirror');
   if (mirror) {
     this.mirror = mirror;
     return;
