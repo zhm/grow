@@ -22,7 +22,7 @@ Grow.prototype.setup = function() {
   };
 
   if ('onpropertychange' in this.element) {
-    if (oninput in ta) {
+    if ('oninput' in ta) {
       this.element.oninput = this.element.onkeyup = wrapped;
     } else {
       this.element.onpropertychange = wrapped;
