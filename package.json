@@ -1,0 +1,11 @@
+{
+  "name": "grow",
+  "description": "Auto-growing text field",
+  "version": "0.0.1",
+  "keywords": [
+  ],
+  "dependencies": {
+  },
+  "component": {
+  }
+}
